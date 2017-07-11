@@ -1,0 +1,61 @@
+<div id='contentBox' >
+
+  <div class="tabs tabs-large">
+    <ul>
+      <li class="popular"><a href="#">Latest</a></li>
+      <li class="latest"><a href="#/topNews" class="active">Top News</a></li>
+    </ul>
+  </div>
+
+<img class="sourceLogo" src="./images/techcrunch-logo.png" alt="">
+<hr>
+  <div class="container articleContainer" ng-controller="homeController">
+
+    <div class="articleBox pull-left" ng-repeat="techcrunch in topNews">
+
+      <div class="sideBar">
+        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        <span>{{techcrunch.publishedAt | date : "shortDate"}}</span>
+      </div>
+
+      <div class="storyContainer">
+        <ul class="fa-ul articleList">
+          <!-- <p class="fa-li fa fa-circle-o text-left circle"></p> -->
+          <li>
+            <p class="title">{{techcrunch.title}}</p>
+            <p class="author"><span>By </span>{{techcrunch.author}}</p>
+            <p class="discription">{{techcrunch.description}}<a href="{{techcrunch.url}}">Read More</a>
+            </p>
+            <img src="{{techcrunch.urlToImage}}" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!--NEW SOURCE -->
+
+<img class="sourceLogo" src="./images/engadget_logo.png" alt="">
+<hr>
+  <div class="container articleContainer" ng-controller='newsController'>
+    <div class="articleBox pull-left" ng-repeat='arsTechnica in topNews'>
+      <div class="sideBar">
+        <span>{{arsTechnica.publishedAt | date : "shortDate"}}</span>
+      </div>
+
+      <div class="storyContainer">
+
+        <ul class="fa-ul articleList">
+          <!-- <p class="fa-li fa fa-circle-o text-left circle"></p> -->
+          <li>
+            <p class="title">{{arsTechnica.title}}</p>
+            <p class="author"><span>By </span>{{arsTechnica.author}}</p>
+            <p class="discription">{{arsTechnica.description}}<a href="{{arsTechnica.url}}">Read More</a>
+            </p>
+            <img src="{{arsTechnica.urlToImage}}" alt="">
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
