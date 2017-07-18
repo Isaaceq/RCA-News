@@ -21,7 +21,6 @@
       <div class="storyContainer">
 
         <ul class="fa-ul articleList">
-          <!-- <p class="fa-li fa fa-circle-o text-left circle"></p> -->
           <li>
             <p class="title">{{article.title}}</p>
             <p class="author"><span>By </span>{{article.author}}</p>
@@ -45,13 +44,13 @@
     <div class="articleBox pull-left" ng-repeat="arsTechnica in articles">
 
       <div class="sideBar">
+        <i class="fa fa-calendar-o" aria-hidden="true"></i>
         <span>{{arsTechnica.publishedAt | date : "shortDate"}}</span>
       </div>
 
       <div class="storyContainer">
 
         <ul class="fa-ul articleList">
-          <!-- <p class="fa-li fa fa-circle-o text-left circle"></p> -->
           <li>
             <p class="title">{{arsTechnica.title}}</p>
             <p class="author"><span>By </span>{{arsTechnica.author}}</p>

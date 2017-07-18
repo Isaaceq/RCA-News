@@ -15,7 +15,6 @@
 #navBar > img {
   margin-left: 40%;
   height: 84px;
-  /* padding-bottom: 52px; */
 }
 
 #navBar>h1 {
@@ -60,7 +59,6 @@ ol, ul {
 
 .tabs-large {
   margin-top: 3%;
-  /* bottom: 31%; */
   overflow: visible;
   background: #515151;
   height: 2.3em;
@@ -111,12 +109,8 @@ ol, ul {
 }
 
 .articleBox {
-  /* width: 90%; */
-  /* margin-top: 5%; */
   margin-right: -30%;
-  /* margin-bottom: 5%; */
   margin-left: -11%;
-  /* margin: 5%; */
 }
 
 .sideBar {
@@ -125,7 +119,6 @@ ol, ul {
   border: 1px solid gray;
   padding-top: 21px;
   border-left: none;
-  /* margin-bottom: 1%; */
   padding-bottom: 248px;
   }
 
@@ -147,11 +140,8 @@ ol, ul {
   }
 
 .storyContainer {
-  /* padding: 56px 0; */
   padding-bottom: 160px;
   border: 1px solid gray;
-  /* float: left; */
-  /* padding-right: 10%; */
   border-right: none;
   margin-bottom: 0;
   margin-left: 126px;
